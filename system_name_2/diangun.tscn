@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://cxaf25eqpwxrp"]
+
+[ext_resource type="Texture2D" uid="uid://bqn030bwln151" path="res://pack/art/random_images/diangun.png" id="1_5457x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwb8w"]
+size = Vector2(689, 679)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tvptt"]
+atlas = ExtResource("1_5457x")
+region = Rect2(0, 0, 830, 825)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nhu4l"]
+atlas = ExtResource("1_5457x")
+region = Rect2(830, 0, 830, 825)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sy2lp"]
+atlas = ExtResource("1_5457x")
+region = Rect2(1660, 0, 830, 825)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c560j"]
+atlas = ExtResource("1_5457x")
+region = Rect2(2490, 0, 830, 825)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hc0bc"]
+atlas = ExtResource("1_5457x")
+region = Rect2(3320, 0, 830, 825)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnrh3"]
+atlas = ExtResource("1_5457x")
+region = Rect2(4150, 0, 830, 825)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvhqu"]
+atlas = ExtResource("1_5457x")
+region = Rect2(4980, 0, 830, 825)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ita4j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tvptt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nhu4l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sy2lp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c560j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hc0bc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnrh3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rvhqu")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="diangun" type="CharacterBody2D" unique_id=415933930]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1557387301]
+position = Vector2(-25.5, 3.5)
+shape = SubResource("RectangleShape2D_mwb8w")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1625312509]
+sprite_frames = SubResource("SpriteFrames_ita4j")
+frame_progress = 0.69227195
