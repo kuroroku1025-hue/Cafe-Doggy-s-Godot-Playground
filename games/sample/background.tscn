@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c4m2pny6is25g"]
+
+[ext_resource type="Texture2D" uid="uid://qix6hgllj4dr" path="res://assets/art/random_images/d439b6003af33a871fb66085d45c10385243b552.png" id="1_argy5"]
+[ext_resource type="PackedScene" uid="uid://bpthwyyrq1mv5" path="res://systems/sysmtem_name_1/dragon.tscn" id="2_m824j"]
+
+[node name="Background" type="Node2D" unique_id=463097197]
+
+[node name="Img" type="Sprite2D" parent="." unique_id=441586189]
+position = Vector2(357, 497)
+texture = ExtResource("1_argy5")
+
+[node name="Dragon" parent="." unique_id=1482201861 instance=ExtResource("2_m824j")]
+position = Vector2(724, 321)
