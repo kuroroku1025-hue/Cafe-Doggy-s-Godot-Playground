@@ -1,2 +1,4 @@
 # 咖啡犬犬的测试用godot项目
 
+Systems命名类时需要在前方加入SystemName以避免类型冲突
+Game中避免创建类，尽可能用system中的类（如要创建加上GameName）
