@@ -1,6 +1,11 @@
 [gd_scene format=3 uid="uid://bco6fjsl63u1e"]
 
 [ext_resource type="Texture2D" uid="uid://dlip0we01d5a1" path="res://pack/art/random_images/龙跳舞.png" id="1_ens1m"]
+[ext_resource type="Script" uid="uid://bgi48lrjglyiv" path="res://sysmtem_name_1/dragon.gd" id="1_rf5ex"]
+
+[sub_resource type="Curve" id="Curve_rf5ex"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.21, 0.49438208), 0.0, 0.0, 0, 0, Vector2(0.9699999, 1), 0.0, 0.0, 0, 0]
+point_count = 3
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rf5ex"]
 atlas = ExtResource("1_ens1m")
@@ -764,10 +769,12 @@ radius = 50.0
 height = 198.0
 
 [node name="Dragon" type="CharacterBody2D" unique_id=1482201861]
+script = ExtResource("1_rf5ex")
+begin_moving_curve = SubResource("Curve_rf5ex")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1922454526]
 sprite_frames = SubResource("SpriteFrames_mwb8w")
-frame_progress = 0.12554786
+frame_progress = 0.76029086
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=129114116]
 position = Vector2(-11, 2)
